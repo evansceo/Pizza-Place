@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/sytles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<video autoplay muted loop id="myVideo">
+  <source src="images & videos/Pizza HD.mp4" type="video/mp4">
+</video>
+<body id="body">
     <header>
         <div class="view landing">
             <div id="overlay">
@@ -31,12 +37,13 @@
                 <div class="mask rgba-black-light align-items-center">
                   <div class="container" id="head">
                     <div class="row">
-      
-                      <div class="col-md-12 mb-4 white-text text-center text">
-                          <img class="img-header" src=" ">
-                        <h1 class="h1-reponsive gold-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse"><strong>skinny legend pizza</strong></h1>
-                        <p class="text-lowercase mb-4 gold-text floater">The pleasure of change in your dish!</p>
-                        <a class=" btn btn-orange button floater" id="orange" href="#make-order">  Order Now!</a>
+                      <div class="col-md-12 mb-4 white-text text-center text" id="main-2">
+                        
+                        <div id="cont-2">
+                          <h1 class="h1-reponsive gold-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse"><strong>PIZZA PLACE</strong></h1>
+                          <p class="text-lowercase mb-4 gold-text floater">The pleasure of change in your dish!</p>
+                           <a class=" btn btn-orange button floater" id="orange" href="#make-order">  Order Now!</a>
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -44,8 +51,8 @@
             </div>
           </div>
     </header>
-    <div class="container my-4">
-        <h5 class="font-weight-light "> FEATURED</h5>
+    <div class="container my-4" id="main">
+        <h5 class="font-weight-light " id="heading"><strong>OUR PIZZA IS THE BEST</strong></h5>
            <hr class="my-4">
              <!--Carousel Wrapper-->
         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
@@ -150,14 +157,9 @@
           <h2 class="about-heading">About <span class="text"> US:</span></h2>
           <div class="about-content">
             <div class="about-text">
-              <h3> A litte Bit <span class="text">About Skinny legend Pizza</span><h3>
-              <p class="lead"> There is nothing cookie cutter about skinny legend pizza. Not our pizzas.Not our people and definetly not the way we live,Around Here we do not settle for nothing but food.We are proud to serve.And we do not just clock in.Not when we can become our best,make friends and have fun.We are the pizza company that lives unboxed </p>
-              <p class="lead">At skinny legend pizza
-              We do not just make pizzas we make people happy. skinny legend pizza was made on the beliefe that pizza nights should be special and we carry that belife on everything that we do, on every pizza that we make.</p>
+              <p id="about-p1">All those Pizza Places favorites you know and love? Well, they,ve crossed regions and continents to be wherever you are… into the buzzing heart of Nairobi, the glitz and glamour Dubai, USA, Europe – and beyond. No matter which of our international Pizza Places you visit, you'll enjoy the same great pizza, that's part of our DNA. It's the one recipe we'll never change.</p>
             </div>
-            <div class="about-image">
-              <img src="https://i1.sndcdn.com/artworks-000574132103-f9rxtc-t500x500.jpg " alt="">
-            </div>
+            
           </div>
         </div>
       </section>
@@ -167,13 +169,14 @@
           <div class="controls-top text-center" id="Order-now">
             <h2>Order Here</h2>
           </div>
-          <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+          <h2 id="order-p">Order your pizza here and we will deliver it to you at your door step!</h2>
           <div class="row">
               <div class="col-sm-5">
                 <form action="">
                   <label for="select">Select Your Flavor</label>
                     <select class="browser-default custom-select custom-select-md mb-3 name">
                       <!-- <option selected value="choose">Choose your flavor</option> -->
+                      <option value="Select">Select Flavour</option>
                       <option value="Chicken Tikka">Chicken Tikka</option>
                       <option value="PeriPeri Pizza">PeriPeri Pizza</option>
                       <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
@@ -209,7 +212,7 @@
                       <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
                     </div>
                     <br><br>
-                    <button type="submit" class="btn btn-orange proceed">Proceed</button>
+                    <button type="submit" class="btn btn-orange proceed" id="proceed">Proceed</button>
                 </form>
               </div>
               <div class="col-sm-7">
@@ -244,10 +247,10 @@
                     </table>
                     <p id="pizzatotal"></p>
                     <p id="totalbill"></p>
-                    <p id="addedprice">Delivery will cost sh. 150</p>
+                    <p id="addedprice"><strong>Delivery will cost sh. 150</strong></p>
                     <p id="finallmessage"></p>
                   </div>
-                  <button class="btn btn-orange addPizza">Add Pizza</button>
+                  <button class="btn btn-orange addPizza" id="addpizza">Add Pizza</button>
                   <button class="btn btn-orange" id="checkout">Checkout</button>
                   <button class="btn btn-orange deliver" id="btn-delivery">Home delivery</button>
                </div>
@@ -272,8 +275,9 @@
           <div class="col-md-3 text-justify">
             <h2>Location</h2>
             <p>Pizza Place</p>
-            <p>Garden City Mall| Thika road</p>
-            <p> 140-01000,Nairobi </p>
+            <p>Garden City Mall | Thika road</p>
+            <p> 140-01000,</p>
+            <p>Nairobi </p>
           </div>
           <div class="col-md-3">
             <h2>Customer Care</h2>
@@ -288,7 +292,7 @@
                 src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=garden city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 <a href="https://www.fnfgo.com/">FNF</a>
               </div>
-              <style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style>
+              <style>.mapouter{position:relative;padding:10px;text-align:right;width:500px;height:350px;}.gmap_canvas {overflow:hidden;background:none!important;width:500px;height:350px;}.gmap_iframe {width:500px!important;height:350px!important;}</style>
             </div>
           </div>
           <div class="col-md-1"></div>
@@ -299,7 +303,10 @@
           </div>
         </div>
      </div>
-     
+     <script src="js/mdb.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
      <script src="js/script.js"></script>
     
 </body>
