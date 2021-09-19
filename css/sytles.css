@@ -45,6 +45,10 @@
   outline: none;
   border-radius: 20px;
   box-shadow: 2px 2px 12px white;
+  transition: all 0.8s;
+  }
+  #orange:hover{
+    background-color: blue;
   }
   #btn-delivery, #final-order{
     height: 35px;
@@ -181,7 +185,9 @@
   }
   #order-p{
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 200;
   }
   #myVideo {
     position: fixed;
@@ -213,4 +219,15 @@
   }
   #about-p1{
     font-size: 19.5px;
+  }
+  #span{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  #h2-span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  #copyright{
+    position: absolute;
+    text-align: center;
   }
