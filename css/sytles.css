@@ -1,6 +1,3 @@
-.row{
-    background: url();
-}
 body{
     margin: 0px;
     padding: 0px;
@@ -66,16 +63,17 @@ body{
   }
   #make-order{
     color: white;
-    background-image: url( https://www.foodiesfeed.com/wp-content/uploads/2019/02/messy-pizza-on-a-black-table.jpg);
+    background-image: url(file:///home/access/Desktop/Desktop-staf/classwork/pizza-place/images%20&%20videos/360_F_241762553_pX7UCU7ZOlPBYraJfBZzYB8ZtgxTcZ3I.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 50px;
+    filter: brightness(100%);
   }
   #contact{
     color: white;
     background-color: #141414;
   }
-  .choise{
+  .choice{
     color: white;
   }
   .table{
