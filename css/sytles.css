@@ -32,39 +32,39 @@
   }
   .btn, #proceed, #checkout, #addpizza{
     height: 35px;
-  width: 100px;
-  padding: 6px;
-  color: black;
-  border: none;
-  background-color: white;
-   border-radius: 20px;
-  box-shadow: 2px 2px 12px white;
+    width: 100px;
+    padding: 6px;
+    color: black;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px white;
   }
   #orange{
     height: 35px;
-  width: 300px;
-  padding: 6px;
-  color: black;
-  border: none;
-  background-color: white;
-  outline: none;
-  border-radius: 20px;
-  box-shadow: 2px 2px 12px white;
-  transition: all 0.8s;
+    width: 300px;
+    padding: 6px;
+    color: black;
+    border: none;
+    background-color: white;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px white;
+    transition: all 0.8s;
   }
   #orange:hover{
     background-color: blue;
   }
   #btn-delivery, #final-order{
     height: 35px;
-  width: 200px;
-  padding: 6px;
-  color: black;
-  border: none;
-  background-color: white;
-  outline: none;
-  border-radius: 20px;
-  box-shadow: 2px 2px 12px white;
+    width: 200px;
+    padding: 6px;
+    color: black;
+    border: none;
+    background-color: white;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px white;
   }
   #proceed:hover, #checkout:hover, #addpizza:hover, #btn-delivery:hover, #final-order:hover{
     background:  blue;
@@ -96,8 +96,8 @@
   h5{
     color: white;
     position:absolute;
-    top:70%;
-    left:40%;
+    top:110%;
+    left:42%;
     z-index:1;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
@@ -114,9 +114,7 @@
   .btn-floating{
     color: white;
   }
-  .img-header{
-    width: 100%;
-  }
+ 
   .navbar-brand{
     color: black;
   }
@@ -148,8 +146,8 @@
     font-family:fantasy;
   }
   #about h3{
-  font-size: 1rem;
-  margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
   #about p.lead{
     margin-bottom: 1rem;
@@ -214,7 +212,7 @@
 
   }
   #main, .carousel-inner{
-    margin-top: 400px;
+    margin-top: 90px;
   }
   
   #cont-2{
@@ -234,4 +232,24 @@
   #copyright{
     position: absolute;
     text-align: center;
+  }
+ 
+  #mouse_click {
+    animation: bounce 2s infinite;
+    margin-top: 40%;
+  }
+  @keyframes bounce {
+    0%,
+    25%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-45px);
+    }
+    60% {
+      transform: translateY(-54px);
+    }
   }
